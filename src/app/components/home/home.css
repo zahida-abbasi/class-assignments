@@ -1,0 +1,72 @@
+.homeContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.textContainer {
+    max-width: 50%; 
+    margin-right: 20px; 
+}
+
+.homeTitle {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.homeDescription {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.exploreButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2c4c4;
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+    background-color: brown;
+    color: white;
+}
+
+.imageContainer {
+    max-width: 50%; /* The image section takes up 50% of the space */
+    display: flex;
+    justify-content: center;
+}
+
+.imageStyle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+/* For smaller screens, stack the content */
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textContainer {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .imageContainer {
+        margin-top: 20px;
+    }
+}
